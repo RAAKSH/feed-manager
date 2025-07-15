@@ -1,5 +1,6 @@
 import logo from '../app/icon.png';
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -8,8 +9,8 @@ export default function Header() {
   className="w-[80%] max-w-[60rem] mx-auto my-8 flex justify-between items-center"
 >
   <Link href="/">
-    <img
-      src={logo.src}
+    <Image
+      src={logo}
       alt="Mobile phone with posts feed on it"
       className="w-20 h-20 drop-shadow-[0_0_3px_#000]"
     />
